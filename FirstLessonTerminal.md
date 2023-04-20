@@ -153,7 +153,7 @@ While viewing the text, the utility can be controlled using internal
 ___
 ##TASK *
 ### *1. Send an http request to the server - *curl*  
-you can use additional functions (to save the content -o; To fetch the headers of the URL -I; for a more detailed description -v etc.
+you can use additional functions (to save the content -o; To fetch the headers of the URL -I; for a more detailed description -v etc.)
 
 	curl http://162.55.220.72:5005/terminal-hw-request
 
@@ -166,19 +166,19 @@ I tried this method, I liked it the most.
 	cat 1.sh - looked at the contents of the file, made sure that everything was saved
 
 ```
-#!/bin/bash
-	cd folder1
-		mkdir fold_1 fold_2 fold_3
-				cd fold_2
-			touch 11.txt 22.txt 33.txt 44.json 55.json
-		mkdir f1 f2 f3
-	ls -la 
+	#!/bin/bash
+		cd folder1
+			mkdir fold_1 fold_2 fold_3
+					cd fold_2
+				touch 11.txt 22.txt 33.txt 44.json 55.json
+			mkdir f1 f2 f3
+		ls -la 
 ```
     mv 11.txt 22.txt f1
     chmod u+x 1.sh 
-- In short, chmod +x following by a filename, usually a script, means that you make it executable. U - user.
+In short, chmod +x following by a filename, usually a script, means that you make it executable. U - user.
 
-		./1.sh 
+	./1.sh 
 
 result
 
