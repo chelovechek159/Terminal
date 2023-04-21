@@ -19,8 +19,10 @@ ___
 ### 4. Create 3 folders - *mkdir folder1 folder2 folder3*
 ### 5. Go to any folder - *cd folder1*
 ### 6. Create 5 files (3 txt, 2 json) - *touch*
+ 
+5 files in one line at once
 
-	touch 1.txt 2.txt 3.txt 4.json 5.json - 5 files in one line at once 
+	touch 1.txt 2.txt 3.txt 4.json 5.json
 
 or each file separately:    
 
