@@ -20,7 +20,7 @@ ___
 ### 5. Go to any folder - *cd folder1*
 ### 6. Create 5 files (3 txt, 2 json) - *touch*
  
-5 files in one line at once
+5 files in one line:
 
 	touch 1.txt 2.txt 3.txt 4.json 5.json
 
