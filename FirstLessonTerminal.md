@@ -17,7 +17,9 @@ ___
     cd - returns to home folder
 	
 ### 4. Create 3 folders - *mkdir folder1 folder2 folder3*
+
 ### 5. Go to any folder - *cd folder1*
+
 ### 6. Create 5 files (3 txt, 2 json) - *touch*
  
 5 files in one line:
@@ -31,6 +33,7 @@ or each file separately:
 	...
 
 ### 7. Create 3 folders - *mkdir fold1 fold2 fold3*
+
 ### 8. List folder contents - *ls*  
 
 command and options such as *-la* (lists all files and folders including hidden) and the path to the required folder.
@@ -58,7 +61,9 @@ result
 
 >Entered any text
 ### 11. Save and exit. - Press keyboard shortcut *"control + C"*
+
 ### 12. Exit folder one level up - *cd ..*
+
 ### 13. Move any 2 files you created to any other folder. - *mv* 
 	mv folder1/1.txt folder1/2.txt folder2 - moved 2 files at once to the folder2.
 
@@ -72,6 +77,7 @@ Additional functions:
 	
 ### 14. Copy any 2 files to any other folder. - *cp* 
 	cp folder1/4.json folder1/5.json folder2 - copied 2 files to folder2.
+	
 ### 15. Find file by name - find command
 	find . -name "1.txt"
 
@@ -139,7 +145,6 @@ While viewing the text, the utility can be controlled using internal
     Ctrl+G, :f - display basic information about the file;
     q, Q, :q, :Q, ZZ - exit(output).
 
-
 ### 20. display date and time - *date*
     date
     Tue Apr 18 22:32:16 +03 2023
@@ -158,7 +163,6 @@ ___
 you can use additional functions (to save the content -o; To fetch the headers of the URL -I; for a more detailed description -v etc.)
 
 	curl http://162.55.220.72:5005/terminal-hw-request
-
 
 ### *2. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13
 I tried this method, I liked it the most.
