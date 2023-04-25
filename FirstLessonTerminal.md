@@ -178,6 +178,7 @@ I tried this method, I liked it the most.
 ```
     mv 11.txt 22.txt f1
     chmod u+x 1.sh 
+    
 In short, chmod +x following by a filename, usually a script, means that you make it executable. U - user.
 
 	./1.sh 
