@@ -1,26 +1,27 @@
 # The first part of the first HomeTask (Linux terminal (GitBash) commands)
 ___
-### 1. View current location - *pwd*
+### 1. View current location - `pwd`
 
 >shows the path to the current folder
 
-### 2. Create folder - *mkdir*
+### 2. Create folder - `mkdir`
 >you can create one or more folders with the mkdir command
 
 	mkdir Terminal - 1 folder named Terminal
 	mkdir folder1 folder2 folder3 - 3 folders
 	mkdir -p fol1/fol2 - to create a folder inside a folder add -p
 	
-### 3. Go to folder - *cd* [path]
+### 3. Go to folder - `cd [path]`
+
     cd downloads/films/fantasy - go to the fantasy folder
     cd .. - will return one level up - to the films folder
     cd - returns to home folder
 	
-### 4. Create 3 folders - *mkdir folder1 folder2 folder3*
+### 4. Create 3 folders - `mkdir folder1 folder2 folder3`
 
-### 5. Go to any folder - *cd folder1*
+### 5. Go to any folder - `cd folder1`
 
-### 6. Create 5 files (3 txt, 2 json) - *touch*
+### 6. Create 5 files (3 txt, 2 json) - `touch`
  
 5 files in one line:
 
@@ -32,11 +33,11 @@ or each file separately:
 	touch 2.txt
 	...
 
-### 7. Create 3 folders - *mkdir fold1 fold2 fold3*
+### 7. Create 3 folders - `mkdir fold1 fold2 fold3`
 
-### 8. List folder contents - *ls*  
+### 8. List folder contents - `ls`  
 
-command and options such as *-la* (lists all files and folders including hidden) and the path to the required folder.
+command and options such as `-la` (lists all files and folders including hidden) and the path to the required folder.
 
 	ls -la
 
@@ -54,17 +55,17 @@ result
 		drwxr-xr-x   2 yaroslav  staff   64 Apr 18 22:21 fold2/
 		drwxr-xr-x   2 yaroslav  staff   64 Apr 18 22:21 fold3/
 
-### 9. Open any txt file - *cat*
+### 9. Open any txt file - `cat`
 	cat 2.txt
 	
-### 10. Write any text in file. - *cat > 1.txt*
+### 10. Write any text in file. - `cat > 1.txt`
 
 >Entered any text
-### 11. Save and exit. - Press keyboard shortcut *"control + C"*
+### 11. Save and exit. - Press keyboard shortcut `"control + C"`
 
-### 12. Exit folder one level up - *cd ..*
+### 12. Exit folder one level up - `cd ..`
 
-### 13. Move any 2 files you created to any other folder. - *mv* 
+### 13. Move any 2 files you created to any other folder. - `mv` 
 	mv folder1/1.txt folder1/2.txt folder2 - moved 2 files at once to the folder2.
 
 Additional functions:
@@ -75,14 +76,14 @@ Additional functions:
     -u - replace the file only if it has been changed;
     -v - display a list of processed files;
 	
-### 14. Copy any 2 files to any other folder. - *cp* 
+### 14. Copy any 2 files to any other folder. - `cp`
 	cp folder1/4.json folder1/5.json folder2 - copied 2 files to folder2.
 	
-### 15. Find file by name - find command
+### 15. Find file by name - `find`
 	find . -name "1.txt"
 
 >	./folder2/1.txt
-### 16. View the content in real time - *tail* 
+### 16. View the content in real time - `tail` 
 command with an additional option -f (on macOS devices, some files are ignored) so use -F
 
 	tail -F folder2/1.txt
@@ -97,7 +98,7 @@ result
         456
         ^C⏎  to end the command, press the key combination "control + C"
 
-### 17. Output the first few lines from a text file - *head*
+### 17. Output the first few lines from a text file - `head`
 >Print the first 7 lines 
 	
 	head -7 folder2/1.txt 
@@ -112,7 +113,7 @@ result
     r23
     r
 
-### 18. Output the last few lines from a text file - *tail*
+### 18. Output the last few lines from a text file - `tail`
 >Print the last 7 lines 
 
 	tail -7 folder2/1.txt 
@@ -127,7 +128,7 @@ result
     123
     Asda⏎    
 
-### 19. View the contents of a long file *- less*
+### 19. View the contents of a long file `less`
 
 	less 1.txt
 
@@ -145,7 +146,7 @@ While viewing the text, the utility can be controlled using internal
     Ctrl+G, :f - display basic information about the file;
     q, Q, :q, :Q, ZZ - exit(output).
 
-### 20. display date and time - *date*
+### 20. display date and time - `date`
     date
     Tue Apr 18 22:32:16 +03 2023
     
@@ -159,7 +160,7 @@ While viewing the text, the utility can be controlled using internal
 
 ___
 ##TASK *
-### *1. Send an http request to the server - *curl*  
+### *1. Send an http request to the server - `curl`  
 you can use additional functions (to save the content -o; To fetch the headers of the URL -I; for a more detailed description -v etc.)
 
 	curl http://162.55.220.72:5005/terminal-hw-request
@@ -183,7 +184,7 @@ I tried this method, I liked it the most.
     mv 11.txt 22.txt f1
     chmod u+x 1.sh 
     
-In short, chmod +x following by a filename, usually a script, means that you make it executable. U - user.
+In short, `chmod +x` following by a filename, usually a script, means that you make it executable. U - user.
 
 	./1.sh 
 
