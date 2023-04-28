@@ -157,6 +157,9 @@ While viewing the text, the utility can be controlled using internal
 
     date +%F_%X
     2023-04-18_22:32:34
+    
+    date +%x_%A_%T
+    04/28/2023_Friday_10:49:27
 
 ___
 ##TASK *
