@@ -183,8 +183,8 @@ I tried this method, I liked it the most.
 				touch 11.txt 22.txt 33.txt 44.json 55.json
 			mkdir f1 f2 f3
 		ls -la 
+		mv 11.txt 22.txt f1
 ```
-    mv 11.txt 22.txt f1
     chmod u+x 1.sh 
     
 In short, `chmod +x` following by a filename, usually a script, means that you make it executable. U - user.
