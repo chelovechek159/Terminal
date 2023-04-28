@@ -187,7 +187,7 @@ I tried this method, I liked it the most.
 ```
     chmod u+x 1.sh 
     
-In short, `chmod +x` following by a filename, usually a script, means that you make it executable. U - user.
+In short, `chmod +x` following by a filename, usually a script, means that you make it executable. `u` - user.
 
 	./1.sh 
 
