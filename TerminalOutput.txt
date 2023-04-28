@@ -1,0 +1,139 @@
+yaroslav@MacBook-Pro ~> pwd
+/Users/yaroslav
+yaroslav@MacBook-Pro ~> cd YARIK/COURSES/1_lesson_TERMINAL/
+yaroslav@MacBook-Pro ~/Y/C/1_lesson_TERMINAL> mkdir Terminal
+yaroslav@MacBook-Pro ~/Y/C/1_lesson_TERMINAL> cd Terminal/
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> mkdir folder1 folder2 folder3
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> cd folder1
+yaroslav@MacBook-Pro ~/Y/C/1/T/folder1> touch 1.txt 2.txt 3.txt 4.json 5.json
+yaroslav@MacBook-Pro ~/Y/C/1/T/folder1> mkdir fold1 fold2 fold3
+yaroslav@MacBook-Pro ~/Y/C/1/T/folder1> ls -la
+total 0
+drwxr-xr-x  10 yaroslav  staff  320 Apr 28 10:43 ./
+drwxr-xr-x   5 yaroslav  staff  160 Apr 28 10:42 ../
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:43 1.txt
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:43 2.txt
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:43 3.txt
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:43 4.json
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:43 5.json
+drwxr-xr-x   2 yaroslav  staff   64 Apr 28 10:43 fold1/
+drwxr-xr-x   2 yaroslav  staff   64 Apr 28 10:43 fold2/
+drwxr-xr-x   2 yaroslav  staff   64 Apr 28 10:43 fold3/
+yaroslav@MacBook-Pro ~/Y/C/1/T/folder1> cat 2.txt
+yaroslav@MacBook-Pro ~/Y/C/1/T/folder1> cat > 1.txt
+quarell
+share
+strict
+user
+admin
+creator
+magic
+meditation^C⏎                                                                   
+yaroslav@MacBook-Pro ~/Y/C/1/T/folder1 [SIGINT]> cd ..
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> mv folder1/1.txt folder1/2.txt folder2
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> ls -la folder2
+total 8
+drwxr-xr-x  4 yaroslav  staff  128 Apr 28 10:45 ./
+drwxr-xr-x  5 yaroslav  staff  160 Apr 28 10:42 ../
+-rw-r--r--  1 yaroslav  staff   46 Apr 28 10:45 1.txt
+-rw-r--r--  1 yaroslav  staff    0 Apr 28 10:43 2.txt
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> cp folder1/4.json folder1/5.json folder2
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> ls -la folder2
+total 8
+drwxr-xr-x  6 yaroslav  staff  192 Apr 28 10:46 ./
+drwxr-xr-x  5 yaroslav  staff  160 Apr 28 10:42 ../
+-rw-r--r--  1 yaroslav  staff   46 Apr 28 10:45 1.txt
+-rw-r--r--  1 yaroslav  staff    0 Apr 28 10:43 2.txt
+-rw-r--r--  1 yaroslav  staff    0 Apr 28 10:46 4.json
+-rw-r--r--  1 yaroslav  staff    0 Apr 28 10:46 5.json
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> find . -name "1.txt"
+./folder2/1.txt
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> tail -F folder2/1.txt
+quarell
+share
+strict
+user
+admin
+creator
+magic
+^C⏎                                                                             
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal [SIGINT]> tail -F folder2/1.txt
+creator
+magic 
+
+
+    we
+    fs
+    d
+    cs
+    123
+    456^C⏎                                                                      
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal [SIGINT]> head -7 folder2/1.txt
+quarell
+share
+strict
+user
+admin
+creator
+magic 
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> tail -5 folder2/1.txt
+    fs
+    d
+    cs
+    123
+    456⏎                                                                        
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal [1]> less folder2/1.txt
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> date 
+Fri Apr 28 10:49:21 +03 2023
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> date +%x_%A_%T
+04/28/2023_Friday_10:49:27
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> curl http://162.55.220.72:5005/terminal-hw-request
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> curl -v http://162.55.220.72:5005/terminal-hw-request
+*   Trying 162.55.220.72:5005...
+* Connected to 162.55.220.72 (162.55.220.72) port 5005 (#0)
+> GET /terminal-hw-request HTTP/1.1
+> Host: 162.55.220.72:5005
+> User-Agent: curl/7.87.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+* HTTP 1.0, assume close after body
+< HTTP/1.0 404 NOT FOUND
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 232
+< Server: Werkzeug/2.0.1 Python/3.8.10
+< Date: Fri, 28 Apr 2023 07:50:47 GMT
+< 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+* Closing connection 0
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> touch 1.sh
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> vim 1.sh
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> chmod u+x 1.sh
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> ls -la
+total 8
+drwxr-xr-x  6 yaroslav  staff  192 Apr 28 10:56 ./
+drwxr-xr-x  8 yaroslav  staff  256 Apr 28 10:42 ../
+-rwxr--r--@ 1 yaroslav  staff  215 Apr 28 10:56 1.sh*
+drwxr-xr-x  8 yaroslav  staff  256 Apr 28 10:45 folder1/
+drwxr-xr-x  6 yaroslav  staff  192 Apr 28 10:48 folder2/
+d
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> ./1.sh
+total 0
+drwxr-xr-x  10 yaroslav  staff  320 Apr 28 10:59 .
+drwxr-xr-x  11 yaroslav  staff  352 Apr 28 10:59 ..
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:59 11.txt
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:59 22.txt
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:59 33.txt
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:59 44.json
+-rw-r--r--   1 yaroslav  staff    0 Apr 28 10:59 55.json
+drwxr-xr-x   2 yaroslav  staff   64 Apr 28 10:59 f_1
+drwxr-xr-x   2 yaroslav  staff   64 Apr 28 10:59 f_2
+drwxr-xr-x   2 yaroslav  staff   64 Apr 28 10:59 f_3
+yaroslav@MacBook-Pro ~/Y/C/1/Terminal> 
