@@ -1,3 +1,5 @@
-# First_Lesson_Terminal
+# Terminal
 ___
-https://github.com/chelovechek159/first_Lesson_Terminal/blob/main/FirstLessonTerminal.md
+## [The First Hometask](https://github.com/chelovechek159/first_Lesson_Terminal/blob/main/FirstLessonTerminal.md)
+
+## [The Second Hometask]
