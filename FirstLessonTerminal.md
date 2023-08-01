@@ -27,6 +27,8 @@ ___
 
 	touch 1.txt 2.txt 3.txt 4.json 5.json
 
+ 	touch {1,2,3}.txt {4,5}.json
+
 or each file separately:    
 
 	touch 1.txt
