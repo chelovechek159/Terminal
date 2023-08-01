@@ -79,7 +79,8 @@ Additional functions:
     -v - display a list of processed files;
 	
 ### 14. Copy any 2 files to any other folder. - `cp`
-	cp folder1/4.json folder1/5.json folder2 - copied 2 files to folder2.
+	cp folder1/4.json folder1/5.json folder2 
+copied 2 files to folder2.
 	
 ### 15. Find file by name - `find`
 	find . -name "1.txt"
