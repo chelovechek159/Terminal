@@ -28,9 +28,9 @@ _____
 ### 13. Add the string "the seConD 2" to file tf_2.txt
     cat >> ~/YARIK/dir_1/tf_2.txt
 ### 14. Make file tf_4.txt with 15 strings
-    cat > tf_4.txt
+    seq 15 | cat >> tf_4.txt
 ### 15. Make file tf_5.txt with 13 strings
-    cat > tf_5.txt
+    seq 13 | cat > tf_5.txt
 ### 16. Output all files in directory
     ls -la
 ### 17. Go out from inner_dir_1
@@ -49,23 +49,28 @@ or
 ### 22. Find way to the files, which have "tf" in name, regardless of letter case
     find . -iname "tf*"
 ### 23. Find the strings in files, which have combination "sec"
-    grep -r "sec" .
+    grep "sec" *
 ### 24. Find the strings in files, which have combination "sec", regardless of letter case
-    grep -ir "sec" .
+    grep -i "sec" *.*
 ### 25. Find the strings in files, which only have combination "sec"
-    grep -wr "sec" .
+    grep -w "sec" *.*
 ### 26. Find the strings in files, which only have combination "sec", regardless of letter case
-    grep -iwr "sec" .
+    grep -iw "sec" *.*
 ### 27. Find the strings in files, which only have combination "second"
-    grep -wr "second" .
+    grep -w "second" *.*
 ### 28. Find the strings in files, which only have combination "second", regardless of letter case
-    grep -iwr "second" .
+    grep -iw "second" *.*
 ### 29. Find the strings in files, which only have combination "second" in bellow directory
-    grep -r "second" inner_dir_1
+    grep -r "second" *
+    
+or
+
+    grep -r "second" */
+find only in bellow dir
 ### 30. Find only way and name the files, whic have combination "second"
-    grep -rl "second" 
+    grep -rl "second" *
 ### 31. Find the strings in all files, which don't have combination "second"
-    grep -rv "second"
+    grep -rv "second" *
 ### 32. Find only way and name the files, which don't have combination "second"
     grep -rvl "second"
 ### 33.Output the last 4 strings 
