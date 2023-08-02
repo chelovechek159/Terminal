@@ -75,7 +75,7 @@ find only in bellow dir
     grep -rvl "second"
 ### 33.Output the last 4 strings 
     tail -4 inner_dir_1/tf_5.txt
-### 34. Output the firs 4 strings
+### 34. Output the first 4 strings
     head -4 inner_dir_1/tf_5.txt
 ### 35. One line command. Make a directory and a file with content.
     mkdir fold2 | echo "NEW TXT FILE" > n1.txt
