@@ -82,7 +82,7 @@ find only in bellow dir
 ### 36. One line command. Move text files, which have combination "sec" to any directory
     grep -rl "sec" | xargs -I{} mv {} fold2
 ### 37. One line command. Copy text files, which have combination "sec" to any directory
-    grep -rl "sec" | xargs -I{} cp {} fold2
+    grep -rl "sec" | xargs -I{} cp {} inner_dir_1
 ### 38. One line command. Find all strings with combination "sec". Add these strings to new file.
     grep -rh "sec" | cat > n1.txt
 ### 39. One line command. Find all strings with combination "sec". Delete these files.
